@@ -4,11 +4,15 @@ A simple command-line weather application written in Python that retrieves curre
 Project idea from: https://roadmap.sh/projects/weather-api-wrapper-service, thank you!
 
 The app:
+
 Converts a city name into geographic coordinates (latitude & longitude)
+
 Fetches real-time weather data
+
 Displays temperature, feels-like temperature, and weather conditions
 
 Features:
+
 1.City-based weather lookup
 
 2.Uses OpenWeatherMap Geocoding API
@@ -70,14 +74,19 @@ Feels like: 17°C
 Condition: Light Rain
 
 Notes & Limitations:
-Uses the current weather endpoint only
-Internet connection required
-City name ambiguity may return the first matching result
+Uses the current weather endpoint only.
+Internet connection required.
+City name ambiguity may return the first matching result.
 
 Possible Improvements:
+
 Add forecast support
+
 Support state/country input
+
 Error handling for API failures
+
 Environment variable for API key
+
 GUI or web interface
 
