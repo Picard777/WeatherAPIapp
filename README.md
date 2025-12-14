@@ -10,14 +10,21 @@ Displays temperature, feels-like temperature, and weather conditions
 
 Features:
 1.City-based weather lookup
+
 2.Uses OpenWeatherMap Geocoding API
+
 3.Displays temperature in Celsius
+
 4.Shows weather condition description
+
 5.Simple CLI interface (easy to extend)
 
 Technologies Used:
+
 -Python 3
+
 -requests library
+
 -OpenWeatherMap API
 
 Requirements:
@@ -31,16 +38,24 @@ Create a free account at:
 https://openweathermap.org/api
 
 Generate an API key.
+
 Replace the API key in the script:
+
 API_KEY = "YOUR_API_KEY_HERE"
+
 Important: Do not expose your API key in public repositories.
 
 How to Run:
 1.Clone or download the project
+
 2.Open a terminal in the project folder
+
 3.Run:
+
 python weather.py
+
 4.Enter a city name when prompted:
+
 5.Enter a city: London
 
 Sample Output:
