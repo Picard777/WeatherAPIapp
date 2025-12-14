@@ -35,7 +35,7 @@ def get_weather(lat, lon):
     
     return requests.get(ONECALL_URL, params=params).json()
 
-def show_weather(data, lat, lon):
+def show_weather(data, lat, lon, country):
     if 'main' in data:
         
         country = data["sys"].get("country", "Unknown")
