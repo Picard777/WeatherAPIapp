@@ -11,7 +11,7 @@ Fetches real-time weather data
 
 Displays temperature, feels-like temperature, and weather conditions
 
-Features:
+FEATURES:
 
 1.City-based weather lookup
 
@@ -31,7 +31,8 @@ Technologies Used:
 
 -OpenWeatherMap API
 
-Requirements:
+REQUIREMENTS:
+
 Make sure u have Python installed, then install dependencies:
 pip install requests
 
@@ -49,7 +50,8 @@ API_KEY = "YOUR_API_KEY_HERE"
 
 Important: Do not expose your API key in public repositories.
 
-How to Run:
+HOW TO RUN:
+
 1.Clone or download the project
 
 2.Open a terminal in the project folder
@@ -73,12 +75,13 @@ Temperature: 18°C
 Feels like: 17°C
 Condition: Light Rain
 
-Notes & Limitations:
+NOTES AND LIMITATIONS:
+
 Uses the current weather endpoint only.
 Internet connection required.
 City name ambiguity may return the first matching result.
 
-Possible Improvements:
+POSSIBLE IMPROVEMENTS:
 
 Add forecast support
 
