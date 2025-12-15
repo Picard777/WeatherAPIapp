@@ -1,6 +1,6 @@
 Weather CLI App (Python)
 
-A simple command-line weather application written in Python that retrieves current weather data for a city using the OpenWeatherMap API. 
+A simple command-line weather application written in Python that retrieves current weather data for a city using the OpenWeatherMap API, the API KEY in the code is deactivated.
 Project idea from: https://roadmap.sh/projects/weather-api-wrapper-service, thank you!
 
 The app:

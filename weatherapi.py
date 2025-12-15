@@ -1,30 +1,36 @@
-import json
 import requests
+from dotenv import load_dotenv
 import os
 
-API_KEY= "YOUR_API_KEY"
+load_dotenv()
+api_key = os.getenv("WEATHER_API_KEY")
 ONECALL_URL = "https://api.openweathermap.org/data/2.5/weather"
 GEO_URL = "http://api.openweathermap.org/geo/1.0/direct"
 
 def get_coordinates(city, limit=1):
     params = {
         'q': city,
-        'appid': API_KEY,
+        'appid': api_key,
         'limit': 1
     }
     response = requests.get(GEO_URL, params=params).json()
     if not response:
         return None
     
-    lat = response[0]["lat"]
-    lon = response[0]["lon"]
-    return lat, lon
+    if isinstance(response, dict):
+        print("Geocoding API error:", response)
+        return None
+
+    if not response:
+        return None
+
+    return response[0]["lat"], response[0]["lon"]
 
 def get_weather(lat, lon):
     params = {
         'lat': lat,
         'lon': lon,
-        'appid': API_KEY,
+        'appid': api_key,
         'units': "metric",
     }
     
