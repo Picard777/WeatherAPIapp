@@ -5,13 +5,7 @@ API_KEY = "REMOVED_API_KEY"
 ONECALL_URL = "https://api.openweathermap.org/data/2.5/weather"
 GEO_URL = "http://api.openweathermap.org/geo/1.0/direct"
 
-def get_coordinates(city, state="", country="", limit=1):
-    query = f"{city}"
-    
-    if state:
-        query += f",{state}"
-    if country:
-        query += f",{country}"
+def get_coordinates(city, limit=1):
     params = {
         'q': city,
         'appid': API_KEY,
@@ -61,7 +55,7 @@ def main():
     
     lat, lon = coords
     weather_data = get_weather(lat, lon)
-    show_weather(weather_data, lat, lon)
+    show_weather(weather_data, lat, lon, country="")
     
 if __name__ == '__main__':
     main()
