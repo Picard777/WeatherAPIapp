@@ -63,7 +63,8 @@ def main():
     lat, lon = coords
     weather_data = get_weather(lat, lon)
     show_weather(weather_data, lat, lon, country="")
-    
+    if main() == True:
+        return main()
 if __name__ == '__main__':
     main()
     
